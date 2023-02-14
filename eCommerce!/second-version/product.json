@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Onyx",
+      "image": "onyx.jpeg",
+      "price": 15.99
+    },
+    {
+      "name": "Rose Quartz",
+      "image": "rosequartz.jpeg",
+      "price": 19.99
+    },
+    {
+        "name": "Amethyst",
+        "image": "amethyst.jpeg",
+        "price": 13.99
+    },
+    {
+        "name": "Citrine",
+        "image": "citrine.jpeg",
+        "price": 14.99
+      },
+      {
+        "name": "Lapis Lazuli",
+        "image": "lapislazuli.jpeg",
+        "price": 24.99
+      },
+      {
+        "name": "Opal",
+        "image": "opal1.webp",
+        "price": 24.99
+      },
+      {
+        "name": "Topaz",
+        "image": "topaz.jpeg",
+        "price": 22.99
+      },
+      {
+        "name": "Aquamarine",
+        "image": "aquamarine.jpeg",
+        "price": 18.99
+      },
+      {
+        "name": "Jade",
+        "image": "jade.jpeg",
+        "price": 23.99
+      },
+      {
+        "name": "Garnet",
+        "image": "garnet.jpeg",
+        "price": 26.99
+      },
+      {
+        "name": "Bloodstone",
+        "image": "bloodstone.jpeg",
+        "price": 28.99
+      },
+      {
+        "name": "Agate",
+        "image": "agate.jpeg",
+        "price": 19.99
+      }
+  ]
+  

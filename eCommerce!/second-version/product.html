@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="product.css">
+  </head>
+  <body>
+    <header class="mainHeader">
+      <nav class="navBar">
+          <h1>CHAR'S CRYSTAL CORNER</h1>
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="product.json">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="product-list">
+        <!-- Products will be dynamically added here -->
+      </section>
+    </main>
+    <script type="text/javascript">
+      // Parse the JSON
+      const products = [
+        {"name":"Onyx","image":"images/onyx.jpeg","price":19.99},
+        {"name":"Rose Quartz","image":"images/rosequartz.jpeg","price":24.99},
+        {"name":"Amethyst","image":"images/amethyst.jpeg","price":24.99},
+        {"name":"Citrine","image":"images/citrine.jpeg","price":24.99},
+        {"name":"Lapis Lazuli","image":"images/lapislazuli.jpeg","price":24.99},
+        {"name":"Opal","image":"images/opal1.webp","price":24.99},
+        {"name":"Topaz","image":"images/topaz.jpeg","price":24.99},
+        {"name":"Aquamarine","image":"images/aquamarine.jpeg","price":24.99},
+        {"name":"Jade","image":"images/jade.jpeg","price":24.99},
+        {"name":"Garnet","image":"images/garnet.jpeg","price":24.99},
+        {"name":"Bloodstone","image":"images/bloodstone.jpeg","price":24.99},
+        {"name":"Agate","image":"images/agate.jpeg","price":24.99}
+      ];
+
+      // Get the element where you want to display the data
+      const productList = document.getElementById('product-list');
+
+      // Loop through the products and create HTML elements for each one
+      for (let i = 0; i < products.length; i++) {
+        // Create a li to hold the product info
+        const productLi = document.createElement('li');
+
+        // Add the product name
+        const name = document.createElement('h2');
+        name.innerHTML = products[i].name;
+        productLi.appendChild(name);
+
+        // Add the product image
+        const image = document.createElement('img');
+        image.src = products[i].image;
+        productLi.appendChild(image);
+
+        // Add the product price
+        const price = document.createElement('p');
+        price.innerHTML = '$' + products[i].price.toFixed(2);
+        productLi.appendChild(price);
+
+        // Add the product li to the product list
+        productList.appendChild(productLi);
+      }
+    </script>
+     <!--Footer -->
+     <footer class="footer">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><img width="60" height="60" src="https://github.com/JosephVang099/Code4Justice/blob/main/images/fb.png?raw=true" alt="facebook logo" class="icon"></a> 
+      <!-- Instagram -->
+      <a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><img width="60" height="60" src="https://github.com/JosephVang099/Code4Justice/blob/main/images/IG.jpg?raw=true" alt="instagram logo" class="icon"></a> 
+      <!-- Twitter -->
+      <a href="https://twitter.com/?lang=en" aria-label="Twitter" target="_blank"><img width="60" height="60" src="https://github.com/JosephVang099/Code4Justice/blob/main/images/twitter.png?raw=true" alt="instagram logo" class="icon"></a> 
+    </footer>
+  </body>
+</html>
